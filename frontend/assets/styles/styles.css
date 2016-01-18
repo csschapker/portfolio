@@ -3,7 +3,7 @@
         box-shadow: none;
     }
     to {
-        box-shadow: 0 2px 2px #2c2c2c;
+        box-shadow: 4px 4px 2px #2c2c2c;
     }
 }
 
@@ -42,9 +42,9 @@ nav >a:hover {
 }
 
 nav >a:hover img {
-    box-shadow: 0 2px 2px #2c2c2c;
+    box-shadow: 4px 4px 2px #2c2c2c;
     animation-name: addShadow;
-    animation-duration: .5s;
+    animation-duration: .25s;
 }
 
 @media(max-width: 800px) {
