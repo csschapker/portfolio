@@ -1,0 +1,32 @@
+{
+  "name": "C. Scott Schapker Portfolio",
+  "homepage": "cscottschapker.com",
+  "authors": [
+    "Scott Schapker <csschapker94@gmail.com>"
+  ],
+  "description": "Portfolio and Resume website for C. Scott Schapker",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "Schapker",
+    "Scott",
+    "Schapker",
+    "csschapker",
+    "portfolio",
+    "website",
+    "resume"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "ScottSchapkerPortfolio",
+  "version": "1.0.0",
+  "description": "Portfolio and Resume website for C. Scott Schapker",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Schapker",
+    "Scott",
+    "Schapker",
+    "csschapker",
+    "portfolio",
+    "website",
+    "resume"
+  ],
+  "author": "Scott Schapker <csschapker94@gmail.com>",
+  "license": "ISC"
+}
