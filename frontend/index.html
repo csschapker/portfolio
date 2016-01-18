@@ -17,35 +17,19 @@
         <script src="app/app.module.js"></script>
         <script src="app/app.config.js"></script>
 
+        <script src="app/components/nav/nav.directive.js"></script>
+
         <script src="app/app.controller.js"></script>
+        <script src="app/states/home/home.controller.js"></script>
+        <script src="app/states/portfolio/portfolio.controller.js"></script>
+        <script src="app/states/resume/resume.controller.js"></script>
     </head>
 
     <body ng-controller="AppController">
 
-        <nav>
-            <a href="">
-                <div>
-                    <img src="assets/images/nav/icon.png">
-                    <h1>home</h1>
-                </div>
-            </a>
+        <nav-menu></nav-menu>
 
-            <a href="">
-                <div>
-                    <img src="assets/images/nav/icon.png">
-                    <h1>portfolio</h1>
-                </div>
-            </a>
-
-            <a href="">
-                <div>
-                    <img src="assets/images/nav/icon.png">
-                    <h1>resume</h1>
-                </div>
-            </a>
-        </nav>
-
-        {{test}}
+        <div ui-view></div>
 
     </body>
 
