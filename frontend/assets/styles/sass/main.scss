@@ -1,0 +1,90 @@
+@keyframes addShadow {
+  from {
+    box-shadow: none;
+  }
+  to {
+    box-shadow: 4px 4px 2px #2c2c2c;
+  }
+}
+
+@keyframes whiteToBlackText {
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
+}
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3c3c3c;
+}
+
+nav {
+  width: 100%;
+  padding: 25px;
+  background-color: #4444bb;
+  box-shadow: 0 5px 2px #2c2c2c;
+  overflow-x: scroll;
+  text-align: center;
+  white-space: nowrap;
+}
+
+nav >a {
+  display: inline-block;
+  width: 200px;
+  margin: 0 50px;
+  padding: 5px;
+  text-align: center;
+  font-size: 14pt;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+nav >a:hover {
+  color: black;
+  animation-name: whiteToBlackText;
+  animation-duration: .25s;
+}
+
+nav >a:hover img {
+  box-shadow: 4px 4px 2px #2c2c2c;
+  animation-name: addShadow;
+  animation-duration: .25s;
+}
+
+@media(max-width: 800px) {
+  nav >a {
+    margin: 0 20px;
+    font-size: 12pt;
+  }
+}
+
+@media(max-width: 500px) {
+  nav >a {
+    margin: 0 10px;
+  }
+}
+
+nav >a >div >* {
+  display: block;
+}
+
+nav >a >div img {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 100%;
+}
+
+nav >a >div h1 {
+  margin: 0;
+  line-height: 1.5em;
+  font-weight: 200;
+  text-transform: uppercase;
+}

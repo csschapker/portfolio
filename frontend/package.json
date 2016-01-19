@@ -16,5 +16,10 @@
     "resume"
   ],
   "author": "Scott Schapker <csschapker94@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-ruby-sass": "^2.0.6"
+  }
 }

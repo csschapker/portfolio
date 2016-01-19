@@ -14,13 +14,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state("portfolio", {
             url: "/portfolio",
             templateUrl: statesDir + "portfolio/portfolio.view.html",
-            controller: "PortfolioController"
+            controller: "PortfolioController",
+            pageTitle: "CSS - Portfolio"
         })
 
         .state("resume", {
             url: "/resume",
             templateUrl: statesDir + "resume/resume.view.html",
-            controller: "ResumeController"
+            controller: "ResumeController",
+            pageTitle: "CSS - Resume"
         })
 
 });
