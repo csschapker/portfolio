@@ -7,20 +7,20 @@ app.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state("home", {
             url: "/",
-            templateUrl: statesDir + "home/home.view.html",
+            templateUrl: statesDir + "home/homeView.html",
             controller: "HomeController"
         })
 
         .state("portfolio", {
             url: "/portfolio",
-            templateUrl: statesDir + "portfolio/portfolio.view.html",
+            templateUrl: statesDir + "portfolio/portfolioView.html",
             controller: "PortfolioController",
             pageTitle: "CSS - Portfolio"
         })
 
         .state("resume", {
             url: "/resume",
-            templateUrl: statesDir + "resume/resume.view.html",
+            templateUrl: statesDir + "resume/resumeView.html",
             controller: "ResumeController",
             pageTitle: "CSS - Resume"
         })

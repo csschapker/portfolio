@@ -1,15 +1,15 @@
-var gulp = require("gulp");
-var sass = require("gulp-ruby-sass");
-var autoprefixer = require("gulp-autoprefixer");
+var gulp = require('gulp');
+var sass = require('gulp-ruby-sass');
+var autoprefixer = require('gulp-autoprefixer');
 
-gulp.task("compileSass", function() {
-    return sass("assets/styles/sass/main.scss", {
-        style: "compressed",
+gulp.task('sass', function() {
+    return sass('assets/styles/sass/main.scss', {
+        style: 'compressed',
         compass: true
-    }).on("error", sass.logError)
+    }).on('error', sass.logError)
         .pipe(autoprefixer({
-            browsers: ["last 2 versions"],
+            browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest("assets/styles"));
+        .pipe(gulp.dest('assets/styles'));
 });
