@@ -20,6 +20,8 @@
         <script src="app/app.config.js"></script>
         <script src="app/app.run.js"></script>
 
+        <script src="app/components/tabBar/tab/tabDirective.js"></script>
+        <script src="app/components/tabBar/tabBarDirective.js"></script>
         <script src="app/components/nav/navDirective.js"></script>
 
         <script src="app/AppController.js"></script>
@@ -30,7 +32,13 @@
 
     <body ng-controller="AppController">
 
-        <nav-menu></nav-menu>
+        <tab-bar>
+            <tab ui-sref="home">Home</tab>
+            <tab ui-sref="portfolio">Portfolio</tab>
+            <tab ui-sref="resume">Résumé</tab>
+        </tab-bar>
+
+        <!--<nav-menu></nav-menu>-->
 
         <div ui-view></div>
 
