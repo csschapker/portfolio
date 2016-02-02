@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/styles/material.min.css">
         <link rel="stylesheet" href="assets/styles/main.css">
 
-        <script src="bower_components/material-design-lite/material.js"></script>
+        <script src="bower_components/material-design-lite/material.min.js"></script>
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 
@@ -20,9 +20,10 @@
         <script src="app/app.config.js"></script>
         <script src="app/app.run.js"></script>
 
-        <script src="app/components/tabBar/tab/tabDirective.js"></script>
-        <script src="app/components/tabBar/tabBarDirective.js"></script>
-        <script src="app/components/nav/navDirective.js"></script>
+        <script src="app/components/page/pageDirective.js"></script>
+        <script src="app/components/tabs/tabDirective.js"></script>
+        <script src="app/components/tabs/tabBarDirective.js"></script>
+        <script src="app/components/tabs/tabPanelDirective.js"></script>
 
         <script src="app/AppController.js"></script>
         <script src="app/states/home/HomeController.js"></script>
@@ -30,18 +31,25 @@
         <script src="app/states/resume/ResumeController.js"></script>
     </head>
 
-    <body ng-controller="AppController">
+    <body ng-cloak>
+        <page>
+            <tab-bar>
+                <tab state="'home'">
+                    <img src="assets/images/nav/icon.png" alt="icon"><br>
+                    Home
+                </tab>
+                <tab state="'portfolio'">
+                    <img src="assets/images/nav/icon.png" alt="icon"><br>
+                    Portfolio
+                </tab>
+                <tab state="'resume'">
+                    <img src="assets/images/nav/icon.png" alt="icon"><br>
+                    Résumé
+                </tab>
+            </tab-bar>
 
-        <tab-bar>
-            <tab ui-sref="home">Home</tab>
-            <tab ui-sref="portfolio">Portfolio</tab>
-            <tab ui-sref="resume">Résumé</tab>
-        </tab-bar>
-
-        <!--<nav-menu></nav-menu>-->
-
-        <div ui-view></div>
-
+            <tab-panel ui-view></tab-panel>
+        </page>
     </body>
 
 </html>

@@ -1,28 +1,29 @@
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config([
+    '$stateProvider', '$urlRouterProvider',
+    function($stateProvider, $urlRouterProvider) {
+        var statesDir = "app/states/";
 
-    var statesDir = "app/states/";
+        $urlRouterProvider.otherwise("/");
 
-    $urlRouterProvider.otherwise("/");
+        $stateProvider
+            .state("home", {
+                url: "/",
+                templateUrl: statesDir + "home/homeView.html",
+                controller: "HomeController"
+            })
 
-    $stateProvider
-        .state("home", {
-            url: "/",
-            templateUrl: statesDir + "home/homeView.html",
-            controller: "HomeController"
-        })
+            .state("portfolio", {
+                url: "/portfolio",
+                templateUrl: statesDir + "portfolio/portfolioView.html",
+                controller: "PortfolioController",
+                pageTitle: "CSS - Portfolio"
+            })
 
-        .state("portfolio", {
-            url: "/portfolio",
-            templateUrl: statesDir + "portfolio/portfolioView.html",
-            controller: "PortfolioController",
-            pageTitle: "CSS - Portfolio"
-        })
-
-        .state("resume", {
-            url: "/resume",
-            templateUrl: statesDir + "resume/resumeView.html",
-            controller: "ResumeController",
-            pageTitle: "CSS - Resume"
-        })
-
-});
+            .state("resume", {
+                url: "/resume",
+                templateUrl: statesDir + "resume/resumeView.html",
+                controller: "ResumeController",
+                pageTitle: "CSS - Resume"
+            });
+    }
+]);
