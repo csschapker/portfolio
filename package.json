@@ -2,7 +2,8 @@
   "name": "ScottSchapkerPortfolio",
   "version": "1.0.0",
   "description": "Portfolio and Resume website for C. Scott Schapker",
-  "main": "index.html",
+  "repository": "https://github.com/csschapker/portfolio.git",
+  "main": "app/app.module.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +21,9 @@
   "dependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-ruby-sass": "^2.0.6"
+    "gulp-jshint": "^2.0.0",
+    "gulp-ruby-sass": "^2.0.6",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0"
   }
 }

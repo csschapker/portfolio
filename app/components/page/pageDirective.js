@@ -6,6 +6,6 @@ app.directive('page', [
             transclude: true,
             template: '<main class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect" ng-transclude></main>',
             controller: 'AppController'
-        }
+        };
     }
 ]);

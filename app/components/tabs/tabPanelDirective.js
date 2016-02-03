@@ -4,6 +4,6 @@ app.directive('tabPanel', [
             restrict: 'E',
             replace: true,
             template: '<div class="mdl-tabs__panel is-active"></div>'
-        }
+        };
     }
 ]);

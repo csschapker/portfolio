@@ -22,8 +22,8 @@ app.directive('tab', [
                     if (!$state.is($scope.state)) {
                         $state.go($scope.state);
                     }
-                })
+                });
             }
-        }
+        };
     }
 ]);
