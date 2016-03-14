@@ -16,6 +16,11 @@ app.directive('tab', [
                     } else {
                         $element.removeClass('is-active');
                     }
+
+                    // keeps the portfolio tab active for projects
+                    if (toState.name.indexOf('project') >= 0 && $scope.state === 'portfolio') {
+                        $element.addClass('is-active');
+                    }
                 });
 
                 $element.bind('click', function() {

@@ -1,6 +1,6 @@
 app.controller('PortfolioController', [
-    '$scope',
-    function($scope) {
-
+    '$scope', 'Portfolio',
+    function($scope, Portfolio) {
+        $scope.projects = Portfolio.getProjects();
     }
 ]);

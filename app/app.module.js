@@ -1,3 +1,4 @@
-var app = angular.module("MainApp", [
-    "ui.router"
+var app = angular.module('MainApp', [
+    'ui.router',
+    'ngAnimate'
 ]);
