@@ -1,0 +1,35 @@
+.mdl-tabs__tab-bar {
+  height: auto;
+  overflow-x: scroll;
+  background-color: $blue-grey-dark;
+  border-bottom: none;
+
+  .mdl-tabs__tab {
+    height: 100%;
+    cursor: pointer;
+    user-select: none;
+
+
+    img {
+      margin-top: 8px;
+      width: 20vw;
+      max-width: 200px;
+      min-width: 75px;
+      height: auto;
+      border-radius: 2px;
+    }
+  }
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
+  color: white;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+  height: 4px;
+  background-color: $blue;
+}
+
+.mdl-tabs__tab .mdl-tabs__ripple-container .mdl-ripple {
+  background-color: $blue;
+}

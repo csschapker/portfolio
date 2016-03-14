@@ -1,47 +1,34 @@
+@import "colors";
+@import "components/nav";
+
 body {
   overflow-x: hidden;
-  background-color: #2196F3;
-}
+  background-color: $blue-grey;
 
-.mdl-tabs__tab-bar {
-  height: auto;
-  overflow-x: scroll;
-  background-color: #1976D2;
-  border-bottom: none;
+  font-size: 14px;
 
-  .mdl-tabs__tab {
-    height: 100%;
-    cursor: pointer;
-    user-select: none;
-
-
-    img {
-      margin-top: 8px;
-      width: 20vw;
-      max-width: 200px;
-      min-width: 75px;
-      height: auto;
-      border-radius: 2px;
-    }
+  @media screen and (min-width: 800px) {
+    font-size: 18pt;
   }
-}
 
-.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
-  color: white;
-}
+  @media screen and (min-width: 500px) {
+    font-size: 16px;
+  }
 
-.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
-  height: 4px;
-  background-color: #7C4DFF;
-}
+  h1 {font-size: 2.5em;}
+  h2 {font-size: 2.2em;}
+  h3 {font-size: 1.9em;}
+  h4 {font-size: 1.6em;}
+  h5 {font-size: 1.3em;}
+  p {font-size: 1em;}
+  small {font-size: .7em;}
 
-.mdl-tabs__tab .mdl-tabs__ripple-container .mdl-ripple {
-  background-color: #7C4DFF;
 }
 
 .mdl-tabs__panel {
-  overflow-x: scroll;
+  overflow-x: auto;
   text-align: center;
+  padding: 16px;
 
   img {
     display: block;
