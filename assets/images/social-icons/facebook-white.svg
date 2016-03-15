@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48"
+	 enable-background="new 0 0 48 48" xml:space="preserve">
+<title>Facebook-black</title>
+<desc>Created with Sketch.</desc>
+<g id="Icons" sketch:type="MSPage">
+	<g id="Black" transform="translate(-200.000000, -200.000000)" sketch:type="MSArtboardGroup">
+		<g id="Line-1" transform="translate(200.000000, 200.000000)" sketch:type="MSLayerGroup">
+			<path id="Facebook" sketch:type="MSShapeGroup" fill="#FFFFFF" d="M25.6,48h-23C1.2,48,0,46.8,0,45.4V2.6C0,1.2,1.2,0,2.6,0h42.7
+				C46.8,0,48,1.2,48,2.6v42.7c0,1.5-1.2,2.6-2.6,2.6H33.1V29.4h6.2l0.9-7.2h-7.2v-4.6c0-2.1,0.6-3.5,3.6-3.5l3.8,0V7.5
+				c-0.7-0.1-2.9-0.3-5.6-0.3c-5.5,0-9.3,3.4-9.3,9.6v5.3h-6.3v7.2h6.3V48L25.6,48z"/>
+		</g>
+	</g>
+</g>
+</svg>

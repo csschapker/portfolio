@@ -1,6 +1,7 @@
 @import "colors";
 
 @import "components/nav";
+@import "components/site-footer";
 @import "components/image-slider";
 @import "components/project-card";
 
@@ -8,9 +9,12 @@
 @import "states/portfolio";
 @import "states/project";
 
+* {  box-sizing: border-box;  }
+
 body {
   overflow-x: hidden;
   background-color: $blue-grey;
+
 
   font-size: 14px;
 
