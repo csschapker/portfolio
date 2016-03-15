@@ -1,0 +1,18 @@
+<div class="image-slider">
+
+    <button class="arrow back" ng-click="back()"></button>
+
+    <div class="slide" ng-repeat="image in images" ng-hide="!isActive($index);">
+        <img ng-src="assets/images/projects/{{image}}">
+    </div>
+
+    <button class="arrow next" ng-click="next()"></button>
+
+
+    <ul class="dots">
+        <li class="dot" ng-repeat="image in images">
+            <button ng-class="{'active':isActive($index)}" ng-click="setActive($index);"></button>
+        </li>
+    </ul>
+
+</div>

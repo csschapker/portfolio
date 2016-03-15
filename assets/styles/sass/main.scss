@@ -1,6 +1,7 @@
 @import "colors";
 
 @import "components/nav";
+@import "components/image-slider";
 
 @import "states/project";
 
@@ -26,20 +27,15 @@ body {
   p {font-size: 1em;}
   small {font-size: .7em;}
 
+
+  button, [href], [ui-sref], a {
+    cursor: pointer;
+  }
+
 }
 
 .mdl-tabs__panel {
   overflow-x: auto;
   text-align: center;
   padding: 16px;
-
-  img {
-    display: block;
-    width: 60%;
-    min-width: 380px;
-    max-width: 800px;
-    height: auto;
-    border-radius: 2px;
-    margin: 0 auto;
-  }
 }
