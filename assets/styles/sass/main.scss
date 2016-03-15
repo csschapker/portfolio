@@ -4,6 +4,7 @@
 @import "components/site-footer";
 @import "components/image-slider";
 @import "components/project-card";
+@import "components/contact-form";
 
 @import "states/home";
 @import "states/portfolio";
@@ -45,6 +46,6 @@ body {
 .mdl-tabs__panel {
   overflow-x: auto;
   text-align: center;
-  padding: 16px 16px 125px 16px;
+  padding: 16px 16px 141px 16px;
 
 }

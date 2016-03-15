@@ -1,0 +1,48 @@
+.contact-form {
+  width: 100%;
+  min-width: 375px;
+  max-width: 700px;
+
+  .mdl-card__title {
+    height: 100px;
+  }
+
+  .mdl-card__supporting-text {
+    text-align: left;
+  }
+
+  .mdl-card__actions {
+    padding: 16px;
+
+    form {
+      width: 100%;
+      text-align: justify;
+    }
+
+    .name, .email {
+      width: 48%;
+
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
+    }
+
+    .message {
+      width: 100%;
+    }
+
+    .button-container {
+      width: 100%;
+      text-align: right;
+    }
+  }
+
+  .mdl-card__menu {
+    a {
+      width: 24px; height: 24px;
+      img {
+        width: 24px; height: 24px;
+      }
+    }
+  }
+}

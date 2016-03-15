@@ -9,23 +9,23 @@ app.directive('tab', [
                 state: '='
             },
             template: '<a class="mdl-tabs__tab"><div ng-transclude></div></a>',
-            link: function($scope, $element, $attrs) {
+            link: function(scope, element, attrs) {
                 $rootScope.$on('$stateChangeStart', function(event, toState) {
-                    if (toState.name === $scope.state) {
-                        $element.addClass('is-active');
+                    if (toState.name === scope.state) {
+                        element.addClass('is-active');
                     } else {
-                        $element.removeClass('is-active');
+                        element.removeClass('is-active');
                     }
 
                     // keeps the portfolio tab active for projects
-                    if (toState.name.indexOf('project') >= 0 && $scope.state === 'portfolio') {
-                        $element.addClass('is-active');
+                    if (toState.name.indexOf('project') >= 0 && scope.state === 'portfolio') {
+                        element.addClass('is-active');
                     }
                 });
 
-                $element.bind('click', function() {
-                    if (!$state.is($scope.state)) {
-                        $state.go($scope.state);
+                element.bind('click', function() {
+                    if (!$state.is(scope.state)) {
+                        $state.go(scope.state);
                     }
                 });
             }
