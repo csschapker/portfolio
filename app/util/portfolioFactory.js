@@ -23,6 +23,22 @@ app.factory('Portfolio', [
             thumb: 'scholarship/scholarship-login.png'
         });
 
+        projects.push({
+            name: 'Pokemon DB Clone',
+            description: 'Ahhh a description.',
+            role: 'I did things. Theses are the really cool things I did. Well they were kinda cool.',
+            images: [
+                'pokemon/pokemonDB-home.png',
+                'pokemon/pokemonDB-dex.png',
+                'pokemon/pokemonDB-dex2.png',
+                'pokemon/pokemonDB-dex3.png',
+                'pokemon/pokemonDB-trainers.png',
+                'pokemon/pokemonDB-badges.png',
+                'pokemon/pokemonDB-search.png'
+            ],
+            thumb: 'pokemon/pokemonDB-home.png'
+        });
+
         return {
             getProjects: function() { return projects; }
         };
