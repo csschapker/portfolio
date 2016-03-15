@@ -1,4 +1,1 @@
-<div ng-repeat="project in projects" ui-sref="project({index: $index + 1})">
-    <img ng-src="assets/images/projects/{{project.thumb}}" alt="{{project.name}}">
-    <h3>{{project.name}}</h3>
-</div>
+<project-card ng-repeat="project in projects" project="project" index="$index"></project-card>
