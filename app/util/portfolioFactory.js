@@ -3,7 +3,7 @@ app.factory('Portfolio', [
 
         var projects = [];
 
-        projects.push({
+        var scholarship = {
             name: 'Digital Corps Scholarship',
             description: 'The Ball State Digital Corps began offering a scholarship to incoming freshman in order to work for the Digital Corps and kickstart their professional portfolio. The scholarship was created to filter applicants based on skill and personality. The application is a survey future students to ensure cultural and academic compatibility. We created a website for potential candidates to use to apply for the scholarship. Our team achieved success using a PHP backend built on the Slim framework, tying into our MySQL database and a frontend driven by AngularJS, Sass and Gulp.',
             role: 'I did things. Theses are the really cool things I did. Well they were kinda cool.',
@@ -21,9 +21,9 @@ app.factory('Portfolio', [
                 'scholarship/scholarship-review.png'
             ],
             thumb: 'scholarship/scholarship-login.png'
-        });
+        };
 
-        projects.push({
+        var pokemon = {
             name: 'Pokemon DB Clone',
             description: 'Ahhh a description.',
             role: 'I did things. Theses are the really cool things I did. Well they were kinda cool.',
@@ -37,7 +37,11 @@ app.factory('Portfolio', [
                 'pokemon/pokemonDB-search.png'
             ],
             thumb: 'pokemon/pokemonDB-home.png'
-        });
+        };
+
+
+        projects.push(scholarship);
+        projects.push(pokemon);
 
         return {
             getProjects: function() { return projects; }
