@@ -5,6 +5,9 @@ app.factory('Portfolio', [
 
         var scholarship = {
             name: 'Digital Corps Scholarship',
+            types: [
+                'Web'
+            ],
             description: 'The Ball State Digital Corps began offering a scholarship to incoming freshman in order to work for the Digital Corps and kickstart their professional portfolio. The scholarship was created to filter applicants based on skill and personality. The application is a survey future students to ensure cultural and academic compatibility. We created a website for potential candidates to use to apply for the scholarship. Our team achieved success using a PHP backend built on the Slim framework, tying into our MySQL database and a frontend driven by AngularJS, Sass and Gulp.',
             role: 'I did things. Theses are the really cool things I did. Well they were kinda cool.',
             images: [
@@ -25,6 +28,9 @@ app.factory('Portfolio', [
 
         var pokemon = {
             name: 'Pokemon DB Clone',
+            types: [
+                'Web'
+            ],
             description: 'Ahhh a description.',
             role: 'I did things. Theses are the really cool things I did. Well they were kinda cool.',
             images: [
@@ -39,8 +45,32 @@ app.factory('Portfolio', [
             thumb: 'pokemon/pokemonDB-home.png'
         };
 
+        var ipr = {
+            name: 'IPR iOS App',
+            types: [
+                'iOS'
+            ],
+            description: '...',
+            role: '...',
+            images: [
+                'ipr/ipr-loading.png',
+                'ipr/ipr-stream.png',
+                'ipr/ipr-streaminfo.png',
+                'ipr/ipr-menu.png',
+                'ipr/ipr-upcoming.png',
+                'ipr/ipr-news.png',
+                'ipr/ipr-localshows.png',
+                'ipr/ipr-localshow.png',
+                'ipr/ipr-community.png',
+                'ipr/ipr-about.png',
+                'ipr/ipr-settings.png'
+            ],
+            thumb: 'ipr/ipr-streaminfo.png'
+        };
+
 
         projects.push(scholarship);
+        projects.push(ipr);
         projects.push(pokemon);
 
         return {
