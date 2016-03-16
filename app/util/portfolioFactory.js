@@ -46,7 +46,7 @@ app.factory('Portfolio', [
         };
 
         var ipr = {
-            name: 'IPR iOS App',
+            name: 'Indiana Public Radio',
             types: [
                 'iOS'
             ],
@@ -68,8 +68,33 @@ app.factory('Portfolio', [
             thumb: 'ipr/ipr-streaminfo.png'
         };
 
+        var bsuMap = {
+            name: 'BSU Campus Map',
+            types: [
+                'Android'
+            ],
+            description: '...',
+            role: '...',
+            images: [
+                'bsumap/bsumap-home.png',
+                'bsumap/bsumap-bsu.png',
+                'bsumap/bsumap-map.png',
+                'bsumap/bsumap-search.png',
+                'bsumap/bsumap-buildingoverview.png',
+                'bsumap/bsumap-directionmap.png',
+                'bsumap/bsumap-directions.png',
+                'bsumap/bsumap-building.png',
+                'bsumap/bsumap-officeoptions.png',
+                'bsumap/bsumap-office.png',
+                'bsumap/bsumap-diningoptions.png',
+                'bsumap/bsumap-placeinfo.png'
+            ],
+            thumb: 'bsumap/bsumap-home.png'
+        };
+
 
         projects.push(scholarship);
+        projects.push(bsuMap);
         projects.push(ipr);
         projects.push(pokemon);
 
