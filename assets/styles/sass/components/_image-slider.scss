@@ -7,20 +7,24 @@
   }
 
   .arrow {
-    top: 150px;
-    width: 50px;
-    height: 50px;
+    //top: 150px;
+    width: 35px;
+    height: 35px;
     border: none;
+    background-position: center;
+    background-size: 75% auto;
+    background-repeat: no-repeat;
+    background-color: transparent;
   }
 
   .arrow.back {
     left: -10%;
-    background: url(../images/arrow_back_white.svg) no-repeat transparent center;
+    background-image: url(../images/arrow_back_white.svg);
   }
 
   .arrow.next {
     right: -10%;
-    background: url(../images/arrow_next_white.svg) no-repeat transparent center;
+    background-image: url(../images/arrow_next_white.svg);
   }
 
   .slide {
