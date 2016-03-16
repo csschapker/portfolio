@@ -1,6 +1,10 @@
 footer.site-footer {
   position: absolute;
   bottom: 0; left: 0;
+  background-image:url(../images/logo/personal_logo_blue_grey.svg);
+  background-position: left 99% bottom 4px; //don't want it touching the right side, now do we?
+  background-size:auto 75%;
+  background-repeat: no-repeat;
   background-color: $charcoal;
   width: 100%;
   height: 125px;
@@ -8,11 +12,12 @@ footer.site-footer {
   .social-buttons {
     width: 100%;
     padding: 4px;
-    text-align: right;
+    text-align: center;
 
     a {
       width: 48px; height: 48px;
       img {
+        margin: 5px 20px;
         max-width: 48px; max-height: 48px;
       }
     }
