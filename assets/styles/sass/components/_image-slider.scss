@@ -1,4 +1,9 @@
 .image-slider {
+  * {
+    user-select: none;
+  }
+
+
   position: relative;
   overflow: hidden;
 
@@ -7,23 +12,26 @@
   }
 
   .arrow {
-    width: 35px;
-    height: 35px;
+    padding: 4px;
+    width: 38px;
+    height: 38px;
     border: none;
-    background-position: center;
-    background-size: 75% auto;
-    background-repeat: no-repeat;
+    border-radius: 2px;
     background-color: transparent;
+    text-align: center;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
   }
 
   .arrow.back {
     left: -10%;
-    background-image: url(../images/arrow_back_white.svg);
   }
 
   .arrow.next {
     right: -10%;
-    background-image: url(../images/arrow_next_white.svg);
   }
 
   .slide {

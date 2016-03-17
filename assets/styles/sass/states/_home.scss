@@ -1,6 +1,7 @@
 body > .page > main.home {
 
   img.headshot {
+    user-select: none;
     @media only screen and (max-width: 800px) {
       max-width: 500px;
     }

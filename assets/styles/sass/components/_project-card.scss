@@ -1,4 +1,8 @@
 .project-card {
+  * {
+    user-select: none;
+  }
+
   width: 450px;
 
   @media only screen and (max-width: 600px) {

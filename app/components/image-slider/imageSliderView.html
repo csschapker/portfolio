@@ -1,12 +1,16 @@
 <div class="image-slider">
 
-    <button class="arrow back" ng-click="back()"></button>
+    <button class="arrow back" ng-click="back()">
+        <img src="assets/images/slider-arrows/slider_arrows_back_black.svg" alt="Previous Image">
+    </button>
 
     <div class="slide" ng-repeat="image in images" ng-hide="!isActive($index);">
-        <img ng-src="assets/images/projects/{{image}}">
+        <img class="mdl-shadow--2dp" ng-src="assets/images/projects/{{image}}">
     </div>
 
-    <button class="arrow next" ng-click="next()"></button>
+    <button class="arrow next" ng-click="next()">
+        <img src="assets/images/slider-arrows/slider_arrows_next_black.svg" alt="Next Image">
+    </button>
 
 
     <ul class="dots">
