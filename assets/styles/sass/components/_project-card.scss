@@ -1,7 +1,28 @@
 .project-card {
   width: 450px;
-  .mdl-card__title {
+
+  @media only screen and (max-width: 600px) {
+     width: 350px;
+  }
+
+  .thumbnail-container {
+    @media only screen and (max-width: 600px) {
+      width: 350px;
+      height: 233px;
+    }
+
+    width: 450px;
     height: 300px;
+
+    img {
+      @media only screen and (max-width: 600px) {
+        width: 350px;
+        height: 233px;
+      }
+
+      width: 450px;
+      height: 300px;
+    }
   }
 
   .mdl-card__actions {

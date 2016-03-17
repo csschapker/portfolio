@@ -9,7 +9,6 @@ app.directive('projectCard', [
                 index: '='
             },
             link: function(scope, element, attrs) {
-                scope.thumb = 'url(assets/images/projects/' + scope.project.thumb + ') no-repeat transparent top / cover';
             }
         };
     }
