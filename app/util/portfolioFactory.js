@@ -77,7 +77,7 @@ app.factory('Portfolio', [
             role: '...',
             images: [
                 'bsumap/bsumap-home.png',
-                'bsumap/bsumap-bsu.png',
+                'bsumap/bsumap-bus.png',
                 'bsumap/bsumap-map.png',
                 'bsumap/bsumap-search.png',
                 'bsumap/bsumap-buildingoverview.png',

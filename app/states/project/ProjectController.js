@@ -1,6 +1,6 @@
 app.controller('ProjectController', [
-    '$scope', '$state', '$stateParams', 'Portfolio',
-    function ($scope, $state, $stateParams, Portfolio) {
+    '$scope', '$state', '$stateParams', 'Portfolio', '$document',
+    function ($scope, $state, $stateParams, Portfolio, $document) {
 
         var projects = Portfolio.getProjects();
         var projectIndex = $stateParams.index - 1;
@@ -9,6 +9,8 @@ app.controller('ProjectController', [
         if (!project) {
             $state.go('portfolio');
         }
+
+        $document.scrollTop(0);
 
         $scope.project = project;
 
