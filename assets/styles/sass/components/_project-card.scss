@@ -1,35 +1,53 @@
+@mixin square($size) {
+  height: $size; width: $size;
+}
+
 .project-card {
   * {
     user-select: none;
   }
 
-  width: 450px;
 
-  @media only screen and (max-width: 600px) {
-     width: 350px;
+  $size: 350px;
+  width: $size;
+  .thumbnail-container {
+    background-color: black;
+    @include square($size);
   }
 
-  .thumbnail-container {
-    @media only screen and (max-width: 600px) {
-      width: 350px;
-      height: 233px;
-    }
+  img {
+    @include square($size);
+  }
 
-    width: 450px;
-    height: 300px;
 
-    img {
-      @media only screen and (max-width: 600px) {
-        width: 350px;
-        height: 233px;
-      }
+  @media only screen and (min-width: 500px) {
+    $size: 375px;
+    width: $size;
+    .thumbnail-container {@include square($size);}
+    img {@include square($size);}
+  }
 
-      width: 450px;
-      height: 300px;
-    }
+  @media only screen and (min-width: 650px) {
+    $size: 425px;
+    width: $size;
+    .thumbnail-container {@include square($size);}
+    img {@include square($size);}
+  }
+
+  @media only screen and (min-width: 1200px) {
+    $size: 450px;
+    width: $size;
+    .thumbnail-container {@include square($size);}
+    img {@include square($size);}
   }
 
   .mdl-card__actions {
+    p {margin: 0;}
+    small:not(:last-child) {
+      margin-right: 8px;
+    }
+    height: auto;
+    padding: 4px 16px;
     text-align: left;
   }
 }
