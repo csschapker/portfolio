@@ -99,7 +99,7 @@ app.factory('Portfolio', [
         projects.push(pokemon);
 
         return {
-            getProjects: function() { return projects; }
+            getProjects: function() { return angular.copy(projects); }
         };
 
     }

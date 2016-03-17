@@ -2,34 +2,28 @@ app.controller('ProjectController', [
     '$scope', '$state', '$stateParams', 'Portfolio', '$document',
     function ($scope, $state, $stateParams, Portfolio, $document) {
 
-        var projects = Portfolio.getProjects();
-        var projectIndex = $stateParams.index - 1;
-        var project = projects[projectIndex];
+        projects = Portfolio.getProjects();
+        projectIndex = $stateParams.index - 1;
+        $scope.project = projects[projectIndex];
+        $scope.previousProject = null;
+        $scope.nextProject = null;
 
-        if (!project) {
+        if (projectIndex > 0) {
+            var previousIndex = projectIndex - 1;
+            $scope.previousProject = projects[previousIndex];
+            $scope.previousProject.stateParams = {index: previousIndex + 1};
+        }
+
+        if (projectIndex < projects.length - 1) {
+            var nextIndex = projectIndex + 1;
+            $scope.nextProject = projects[nextIndex];
+            $scope.nextProject.stateParams = {index: nextIndex + 1};
+        }
+
+        if (!$scope.project) {
             $state.go('portfolio');
         }
 
         $document.scrollTop(0);
-
-        $scope.project = project;
-
-        $scope.currentIndex = 0;
-
-        $scope.setCurrentSlideIndex = function (index) {
-            $scope.currentIndex = index;
-        };
-
-        $scope.isCurrentSlideIndex = function (index) {
-            return $scope.currentIndex === index;
-        };
-
-        $scope.prevSlide = function () {
-            $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : 0;
-        };
-
-        $scope.nextSlide = function () {
-            $scope.currentIndex = ($scope.currentIndex < $scope.project.images.length - 1) ? ++$scope.currentIndex : $scope.project.images.length - 1;
-        };
     }
 ]);

@@ -1,3 +1,4 @@
+
 <image-slider ng-if="project" images="project.images"></image-slider>
 
 <h1>The Project</h1>
@@ -5,3 +6,18 @@
 
 <h1>My Role</h1>
 <p>{{project.role}}</p>
+
+
+<div class="button-container">
+
+    <button ng-if="previousProject" ui-sref="project({{previousProject.stateParams}})" class="previous mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-button--accent mdl-js-ripple-effect">
+        Previous: <br>
+        {{previousProject.name}}
+    </button>
+
+    <button ng-if="nextProject" ui-sref="project({{nextProject.stateParams}})" class="next mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-button--accent mdl-js-ripple-effect">
+        Next: <br>
+        {{nextProject.name}}
+    </button>
+
+</div>

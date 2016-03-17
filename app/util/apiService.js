@@ -7,7 +7,7 @@ app.service('Api', [
         this.sendPersonalMessage = function(data, onSuccess, onError) {
             var url = baseUrl + 'personal-message';
             $http.post(url, data).then(onSuccess, onError);
-        }
+        };
 
     }
 ]);
