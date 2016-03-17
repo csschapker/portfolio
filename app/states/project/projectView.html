@@ -1,11 +1,20 @@
 
 <image-slider ng-if="project" images="project.images"></image-slider>
 
-<h1>The Project</h1>
-<p>{{project.description}}</p>
+<div class="text-container">
 
-<h1>My Role</h1>
-<p>{{project.role}}</p>
+    <h1>The Project</h1>
+    <p>{{project.description}}</p>
+
+    <h1>My Role</h1>
+    <p>{{project.role}}</p>
+
+    <h1 ng-if="project.technologies.length">Technologies Used</h1>
+    <ul ng-if="project.technologies.length">
+        <li ng-repeat="technology in project.technologies">{{technology}}</li>
+    </ul>
+
+</div>
 
 
 <div class="button-container">

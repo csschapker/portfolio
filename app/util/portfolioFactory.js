@@ -10,6 +10,11 @@ app.factory('Portfolio', [
             ],
             description: 'The Ball State Digital Corps began offering a scholarship to incoming freshman in order to work for the Digital Corps and kickstart their professional portfolio. The scholarship was created to filter applicants based on skill and personality. The application is a survey future students to ensure cultural and academic compatibility. We created a website for potential candidates to use to apply for the scholarship. Our team achieved success using a PHP backend built on the Slim framework, tying into our MySQL database and a frontend driven by AngularJS, Sass and Gulp.',
             role: 'I did things. Theses are the really cool things I did. Well they were kinda cool.',
+            technologies: [
+                'AngularJS',
+                'PHP',
+                '...'
+            ],
             images: [
                 'scholarship/scholarship-register.png',
                 'scholarship/scholarship-login.png',
@@ -33,6 +38,11 @@ app.factory('Portfolio', [
             ],
             description: 'Ahhh a description.',
             role: 'I did things. Theses are the really cool things I did. Well they were kinda cool.',
+            technologies: [
+                'AngularJS',
+                'PHP',
+                '...'
+            ],
             images: [
                 'pokemon/pokemonDB-home.png',
                 'pokemon/pokemonDB-dex.png',
@@ -52,6 +62,11 @@ app.factory('Portfolio', [
             ],
             description: '...',
             role: '...',
+            technologies: [
+                'Objective-C',
+                'Xcode',
+                '...'
+            ],
             images: [
                 'ipr/ipr-loading.png',
                 'ipr/ipr-stream.png',
@@ -75,6 +90,11 @@ app.factory('Portfolio', [
             ],
             description: '...',
             role: '...',
+            technologies: [
+                'Java',
+                'Android Studio',
+                '...'
+            ],
             images: [
                 'bsumap/bsumap-home.png',
                 'bsumap/bsumap-bus.png',
