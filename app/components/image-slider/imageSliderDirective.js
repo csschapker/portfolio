@@ -1,6 +1,6 @@
 app.directive('imageSlider', [
-    '$document', '$timeout',
-    function($document, $timeout) {
+    '$document',
+    function($document) {
         return {
             restrict: 'E',
             replace: true,
