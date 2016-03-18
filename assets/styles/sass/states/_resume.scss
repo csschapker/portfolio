@@ -1,0 +1,56 @@
+body > .page > main.resume {
+  position: relative;
+  overflow-x: hidden;
+
+  .mdl-button--raised {
+    margin-bottom: 24px;
+
+    @media only screen and (min-width: 751px) {
+      display: none;
+    }
+  }
+
+  .scroll-container {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .container {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 2px;
+    width: 612px;
+
+    @media only screen and (max-width: 800px) {
+      width: 575px;
+    }
+
+    img {
+      width: 612px;
+      height: 792px;
+
+      @media only screen and (max-width: 800px) {
+        width: 575px;
+        height: 744px;
+      }
+    }
+  }
+
+  .mdl-button--fab {
+    @media only screen and (max-width: 750px) {
+      display: none;
+    }
+
+
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+}
