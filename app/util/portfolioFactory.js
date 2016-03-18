@@ -28,7 +28,7 @@ app.factory('Portfolio', [
                 'scholarship/scholarship-resume.png',
                 'scholarship/scholarship-review.png'
             ],
-            thumb: 'scholarship/scholarship-login.png'
+            thumb: 'scholarship/scholarship-thumb.png'
         };
 
         var pokemon = {
@@ -80,7 +80,7 @@ app.factory('Portfolio', [
                 'ipr/ipr-about.png',
                 'ipr/ipr-settings.png'
             ],
-            thumb: 'ipr/ipr-streaminfo.png'
+            thumb: 'ipr/ipr-thumb.png'
         };
 
         var bsuMap = {
@@ -96,20 +96,45 @@ app.factory('Portfolio', [
                 '...'
             ],
             images: [
-                'bsumap/bsumap-home.png',
-                'bsumap/bsumap-bus.png',
-                'bsumap/bsumap-map.png',
-                'bsumap/bsumap-search.png',
-                'bsumap/bsumap-buildingoverview.png',
-                'bsumap/bsumap-directionmap.png',
-                'bsumap/bsumap-directions.png',
-                'bsumap/bsumap-building.png',
-                'bsumap/bsumap-officeoptions.png',
-                'bsumap/bsumap-office.png',
-                'bsumap/bsumap-diningoptions.png',
-                'bsumap/bsumap-placeinfo.png'
+                'bsumap/bsumap-homepage.png',
+                'bsumap/bsumap-buspage.png',
+                'bsumap/bsumap-mappage.png',
+                'bsumap/bsumap-searchlist.png',
+                'bsumap/bsumap-buildingmap.png',
+                'bsumap/bsumap-directionsmap.png',
+                'bsumap/bsumap-directionslist.png',
+                'bsumap/bsumap-buildingpage.png',
+                'bsumap/bsumap-officelist.png',
+                'bsumap/bsumap-officeinfo.png',
+                'bsumap/bsumap-dininglist.png',
+                'bsumap/bsumap-dininginfo.png'
             ],
-            thumb: 'bsumap/bsumap-home.png'
+            thumb: 'bsumap/bsumap-thumb.png'
+        };
+
+        var careerCenter = {
+            name: 'Career Center Kiosk',
+            types: [
+                'Web'
+            ],
+            description: '...',
+            role: '...',
+            technologies: [
+                'AngularJS',
+                'Sass',
+                '...'
+            ],
+            images: [
+                'careercenter/careercenter-loading.png',
+                'careercenter/careercenter-home.png',
+                'careercenter/careercenter-home2.png',
+                'careercenter/careercenter-browse.png',
+                'careercenter/careercenter-survey.png',
+                'careercenter/careercenter-results.png',
+                'careercenter/careercenter-contact.png',
+                'careercenter/careercenter-end.png'
+            ],
+            thumb: 'careercenter/careercenter-thumb.png'
         };
 
 
@@ -117,6 +142,7 @@ app.factory('Portfolio', [
         projects.push(bsuMap);
         projects.push(ipr);
         projects.push(pokemon);
+        projects.push(careerCenter);
 
         return {
             getProjects: function() { return angular.copy(projects); }
