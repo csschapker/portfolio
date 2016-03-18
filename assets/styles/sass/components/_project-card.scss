@@ -3,6 +3,7 @@
 }
 
 .project-card {
+  user-select: none;
   * {
     user-select: none;
   }
@@ -18,22 +19,7 @@
     @include square($size);
   }
 
-
-  @media only screen and (min-width: 500px) {
-    $size: 375px;
-    width: $size;
-    .thumbnail-container {@include square($size);}
-    img {@include square($size);}
-  }
-
-  @media only screen and (min-width: 650px) {
-    $size: 425px;
-    width: $size;
-    .thumbnail-container {@include square($size);}
-    img {@include square($size);}
-  }
-
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1500px) {
     $size: 450px;
     width: $size;
     .thumbnail-container {@include square($size);}
