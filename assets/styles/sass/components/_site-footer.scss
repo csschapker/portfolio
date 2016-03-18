@@ -1,24 +1,72 @@
 footer.site-footer {
   position: absolute;
-  bottom: 0; left: 0;
-  background-image: url(../images/logo/personal_logo_blue_grey.svg);
-  background-position: left 99% bottom 4px;
-  background-size: auto 75%;
-  background-repeat: no-repeat;
-  background-color: $charcoal;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 125px;
+  background-image: url(../images/logo/personal_logo_blue_grey.svg);
+  background-position: right 2px bottom 4px;
+  background-size: auto 80px;
+  background-repeat: no-repeat;
+  background-color: $charcoal;
+  padding: 20px;
+  text-align: left;
+
+  @media only screen and (min-width: 800px), (max-width: 400px) {
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 400px) {
+    background-image: none;
+  }
+
+  @media only screen and (min-width: 800px) {
+    padding: 20px 175px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $blue-grey;
+  }
 
   .social-buttons {
     width: 100%;
     padding: 4px;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 8px;
+
+    @media only screen and (min-width: 800px), (max-width: 400px) {
+      text-align: center;
+    }
 
     a {
-      width: 48px; height: 48px;
+      @media only screen and (min-width: 800px), (max-width: 400px) {
+        text-align: center;
+      }
+
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin: 0 4px;
+      &:first-child {margin-left: 0;}
+      &:last-child {margin-right: 0;}
+
+      @media only screen and (min-width: 600px) {
+        width: 48px;
+        height: 48px;
+        margin: 0 8px;
+        &:first-child {margin-left: 0;}
+        &:last-child {margin-right: 0}
+      }
+
       img {
-        margin: 5px 20px;
-        max-width: 48px; max-height: 48px;
+        width: 30px;
+        height: 30px;
+
+        @media only screen and (min-width: 600px) {
+          width: 48px;
+          height: 48px;
+        }
       }
     }
   }
