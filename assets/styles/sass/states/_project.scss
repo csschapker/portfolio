@@ -5,6 +5,9 @@ body > .page > main.project {
   }
 
   .text-container {
+    .in-progress {width: 100%; text-align: center; color: black;}
+
+
     margin: 16px auto;
     width: 80%;
     text-align: left;
@@ -17,6 +20,18 @@ body > .page > main.project {
 
     p {
       margin-bottom: 3em;
+    }
+
+    ul {
+      width: 350px;
+      text-align: justify;
+
+      li {
+        display: inline-block;
+        width: 171px;
+      }
+
+
     }
   }
 
