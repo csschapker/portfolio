@@ -1,13 +1,12 @@
 app.run([
     '$rootScope', '$state', '$timeout',
     function($rootScope, $state, $timeout) {
+        $rootScope.$state = $state;
         $rootScope.$on('$viewContentLoaded', function() {
             $timeout(function() {
                 componentHandler.upgradeAllRegistered();
             });
         });
-
-
 
         $rootScope.$on('$stateChangeStart', function (event, toState, params) {
             var title = toState.pageTitle;

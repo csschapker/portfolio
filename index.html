@@ -10,9 +10,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="stylesheet" href="assets/fonts/ptsans_regular_macroman/stylesheet.css">
 
         <link rel="stylesheet" href="assets/libs/reset-css/reset.css">
-        <!--<link rel="stylesheet" href="assets/styles/material.min.css">-->
         <link rel="stylesheet" href="assets/libs/angular-ui-notification/dist/angular-ui-notification.css">
         <link rel="stylesheet" href="assets/styles/main.css">
 
@@ -44,7 +44,6 @@
         <script src="app/states/home/HomeController.js"></script>
         <script src="app/states/portfolio/collection/PortfolioCollectionController.js"></script>
         <script src="app/states/portfolio/project/PortfolioProjectController.js"></script>
-        <!--<script src="app/states/portfolio/PortfolioController.js"></script>-->
         <script src="app/states/project/ProjectController.js"></script>
         <script src="app/states/resume/ResumeController.js"></script>
     </head>
@@ -60,29 +59,9 @@
             </nav>
         </header>
 
-        <main ui-view></main>
-
+        <main ui-view class="{{$state.current.name}}"></main>
         <site-footer></site-footer>
 
-        <!--<page>-->
-            <!--<tab-bar>-->
-                <!--<tab state="'home'">-->
-                    <!--<img src="assets/images/logo/personal_logo_black_square.svg" alt="icon" class="mdl-shadow&#45;&#45;2dp"><br>-->
-                    <!--Home-->
-                <!--</tab>-->
-                <!--<tab state="'portfolio'">-->
-                    <!--<img src="assets/images/portfolio-icon.svg" alt="icon" class="mdl-shadow&#45;&#45;2dp"><br>-->
-                    <!--Portfolio-->
-                <!--</tab>-->
-                <!--<tab state="'resume'">-->
-                    <!--<img src="assets/images/resume-icon.svg" alt="icon" class="mdl-shadow&#45;&#45;2dp"><br>-->
-                    <!--Résumé-->
-                <!--</tab>-->
-            <!--</tab-bar>-->
-
-            <!--<tab-panel ui-view></tab-panel>-->
-        <!--</page>-->
-        <!--<site-footer></site-footer>-->
     </body>
 
 </html>
