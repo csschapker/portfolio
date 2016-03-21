@@ -1,0 +1,35 @@
+body > header {
+  background: $charcoal;
+  padding: 10px;
+  color: white;
+
+  nav {
+
+    ul {
+      padding: 10px 0;
+
+      li {
+        display: inline-block;
+        border-bottom: 2px solid transparent;
+        text-transform: uppercase;
+        line-height: 20px;
+        font-size: 1.25em;
+        &:not(:last-child) {margin-right: 20px;}
+
+        &.is-active {
+          animation-name: add-underline;
+          animation-duration: .25s;
+          animation-timing-function: ease-out;
+          border-bottom: 2px solid $blue;
+        }
+      }
+
+    }
+
+  }
+}
+
+@keyframes add-underline {
+  from {border-bottom: 2px solid transparent}
+  to {border-bottom: 2px solid $blue}
+}

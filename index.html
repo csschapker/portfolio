@@ -12,7 +12,7 @@
 
 
         <link rel="stylesheet" href="assets/libs/reset-css/reset.css">
-        <link rel="stylesheet" href="assets/styles/material.min.css">
+        <!--<link rel="stylesheet" href="assets/styles/material.min.css">-->
         <link rel="stylesheet" href="assets/libs/angular-ui-notification/dist/angular-ui-notification.css">
         <link rel="stylesheet" href="assets/styles/main.css">
 
@@ -48,25 +48,39 @@
     </head>
 
     <body>
-        <page>
-            <tab-bar>
-                <tab state="'home'">
-                    <img src="assets/images/logo/personal_logo_black_square.svg" alt="icon" class="mdl-shadow--2dp"><br>
-                    Home
-                </tab>
-                <tab state="'portfolio'">
-                    <img src="assets/images/portfolio-icon.svg" alt="icon" class="mdl-shadow--2dp"><br>
-                    Portfolio
-                </tab>
-                <tab state="'resume'">
-                    <img src="assets/images/resume-icon.svg" alt="icon" class="mdl-shadow--2dp"><br>
-                    Résumé
-                </tab>
-            </tab-bar>
+        <header>
+            <nav>
+                <ul>
+                    <li ui-sref="home" ui-sref-active="is-active">home</li>
+                    <li ui-sref="portfolio" ui-sref-active="is-active">portfolio</li>
+                    <li ui-sref="resume" ui-sref-active="is-active">résumé</li>
+                </ul>
+            </nav>
+        </header>
 
-            <tab-panel ui-view></tab-panel>
-        </page>
+        <main ui-view></main>
+
         <site-footer></site-footer>
+
+        <!--<page>-->
+            <!--<tab-bar>-->
+                <!--<tab state="'home'">-->
+                    <!--<img src="assets/images/logo/personal_logo_black_square.svg" alt="icon" class="mdl-shadow&#45;&#45;2dp"><br>-->
+                    <!--Home-->
+                <!--</tab>-->
+                <!--<tab state="'portfolio'">-->
+                    <!--<img src="assets/images/portfolio-icon.svg" alt="icon" class="mdl-shadow&#45;&#45;2dp"><br>-->
+                    <!--Portfolio-->
+                <!--</tab>-->
+                <!--<tab state="'resume'">-->
+                    <!--<img src="assets/images/resume-icon.svg" alt="icon" class="mdl-shadow&#45;&#45;2dp"><br>-->
+                    <!--Résumé-->
+                <!--</tab>-->
+            <!--</tab-bar>-->
+
+            <!--<tab-panel ui-view></tab-panel>-->
+        <!--</page>-->
+        <!--<site-footer></site-footer>-->
     </body>
 
 </html>
