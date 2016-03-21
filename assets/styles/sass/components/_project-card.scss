@@ -15,6 +15,7 @@ $text-background: rgba(50, 50, 50, .75);
     animation: add-background .15s ease-out;
     background-color: $text-background;
     border: 2px solid black;
+    border-radius: 2px;
 
     h1 {
       color: white;
@@ -24,7 +25,7 @@ $text-background: rgba(50, 50, 50, .75);
 
   position: relative;
 
-  $size: 350px;
+  $size: 325px;
   width: $size;
 
   > * {@include square($size);}

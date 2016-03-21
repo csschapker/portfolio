@@ -59,7 +59,7 @@
             </nav>
         </header>
 
-        <main ui-view class="{{$state.current.name}}"></main>
+        <main ui-view class="{{$state.current.name.replace('.', '-')}}"></main>
         <site-footer></site-footer>
 
     </body>
