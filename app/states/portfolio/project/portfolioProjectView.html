@@ -20,13 +20,13 @@
 
 <div class="button-container">
 
-    <button ng-if="previousProject" ui-sref="portfolio.project({{previousProject.stateParams}})" class="previous mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-        <p>Previous</p>
-        <p><small>{{previousProject.name}}</small></p>
+    <button ng-if="previousProject" ui-sref="portfolio.project({{previousProject.stateParams}})" class="previous round-button">
+        <h1>Previous</h1>
+        <p>{{previousProject.name}}</p>
     </button>
 
-    <button ng-if="nextProject" ui-sref="portfolio.project({{nextProject.stateParams}})" class="next mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-        <p>Next</p>
-        <p><small>{{nextProject.name}}</small></p>
+    <button ng-if="nextProject" ui-sref="portfolio.project({{nextProject.stateParams}})" class="next round-button">
+        <h1>Next</h1>
+        <p>{{nextProject.name}}</p>
     </button>
 </div>

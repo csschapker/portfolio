@@ -1,25 +1,29 @@
-body > .page > main.project {
+body > main.portfolio-project {
 
   .image-slider {
-    margin-bottom: 48px;
+    margin: 0 auto 48px;
   }
 
   .text-container {
-    .in-progress {width: 100%; text-align: center; color: black;}
+    .in-progress {width: 100%; text-align: center;}
 
 
     margin: 16px auto;
     width: 80%;
     text-align: left;
-    color: white;
 
     @media only screen and (max-width: 600px) {
       width: 100%;
       padding: 0 8px;
     }
 
+    h1 {
+      margin-bottom: .5em;
+    }
+
     p {
       margin-bottom: 3em;
+      line-height: 1.25em;
     }
 
     ul {
@@ -29,6 +33,7 @@ body > .page > main.project {
       li {
         display: inline-block;
         width: 171px;
+        line-height: 1.4em;
       }
 
 
@@ -42,13 +47,9 @@ body > .page > main.project {
     overflow: hidden;
 
     button {
-      p {
-        margin: 0;
-        line-height: 1.5em;
+      h1 {
+        line-height: 1.15em;
       }
-      background-color: $charcoal;
-      padding: 8px;
-      color: white;
       display: block;
       position: relative;
       height: auto;
