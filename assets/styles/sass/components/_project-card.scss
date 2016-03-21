@@ -12,16 +12,13 @@ $text-background: rgba(50, 50, 50, .75);
 
   &:hover .text-container {
     display: block;
-    animation-name: add-background;
-    animation-duration: .25s;
-    animation-timing-function: ease-out;
+    animation: add-background .15s ease-out;
     background-color: $text-background;
+    border: 2px solid black;
 
     h1 {
       color: white;
-      animation-name: add-text;
-      animation-duration: .25s;
-      animation-timing-function: ease-out;
+      animation: add-test .2s ease-out;
     }
   }
 
@@ -44,14 +41,26 @@ $text-background: rgba(50, 50, 50, .75);
     position: absolute;
     top: 0;
     left: 0;
+    border: none;
 
     h1 {color: transparent;}
   }
 }
 
+@keyframes add-border {
+  from {border: none}
+  to {border: 2px solid black}
+}
+
 @keyframes add-background {
-  from {background-color: transparent}
-  to {background-color: $text-background}
+  from {
+    background-color: transparent;
+    border: none;
+  }
+  to {
+    background-color: $text-background;
+    border: 2px solid black;
+  }
 }
 
 @keyframes add-text {
