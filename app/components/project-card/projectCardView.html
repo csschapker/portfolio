@@ -1,13 +1,8 @@
-<div class="project-card mdl-card mdl-shadow--2dp mdl-js-ripple-effect mdl-js-button" ui-sref="project({index: index+1})">
-    <div class="thumbnail-container">
-        <img class="thumbnail" ng-src="assets/images/projects/{{project.thumb}}">
-    </div>
+<div class="project-card" ui-sref="portfolio.project({index: index+1})">
 
-    <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">{{project.name}}</h2>
-    </div>
+    <img class="thumbnail" ng-src="assets/images/projects/{{project.thumb}}">
 
-    <div class="mdl-card__actions mdl-card--border">
-        <p><small ng-repeat="type in project.types">{{type}}</small></p>
+    <div class="text-container">
+        <h1>{{project.name}}</h1>
     </div>
 </div>

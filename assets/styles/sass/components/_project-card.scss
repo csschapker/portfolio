@@ -2,37 +2,59 @@
   height: $size; width: $size;
 }
 
+$text-background: rgba(50, 50, 50, .75);
+
 .project-card {
   user-select: none;
   * {
     user-select: none;
   }
 
+  &:hover .text-container {
+    display: block;
+    animation-name: add-background;
+    animation-duration: .25s;
+    animation-timing-function: ease-out;
+    background-color: $text-background;
+
+    h1 {
+      color: white;
+      animation-name: add-text;
+      animation-duration: .25s;
+      animation-timing-function: ease-out;
+    }
+  }
+
+  position: relative;
 
   $size: 350px;
   width: $size;
-  .thumbnail-container {
-    @include square($size);
-  }
 
-  img {
-    @include square($size);
-  }
+  > * {@include square($size);}
 
   @media only screen and (min-width: 1500px) {
     $size: 450px;
     width: $size;
-    .thumbnail-container {@include square($size);}
-    img {@include square($size);}
+    > * {@include square($size);}
   }
 
-  .mdl-card__actions {
-    p {margin: 0;}
-    small:not(:last-child) {
-      margin-right: 8px;
-    }
-    height: auto;
-    padding: 4px 16px;
-    text-align: left;
+  .text-container {
+    background-color: transparent;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    h1 {color: transparent;}
   }
+}
+
+@keyframes add-background {
+  from {background-color: transparent}
+  to {background-color: $text-background}
+}
+
+@keyframes add-text {
+  from {color: transparent}
+  to {color: white}
 }

@@ -2,6 +2,7 @@ app.config([
     '$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
         var statesDir = 'app/states/';
+        var portfolioDir = 'app/states/portfolio/';
 
         $urlRouterProvider.otherwise('/');
 
@@ -14,15 +15,22 @@ app.config([
 
             .state('portfolio', {
                 url: '/portfolio',
-                templateUrl: statesDir + 'portfolio/portfolioView.html',
-                controller: 'PortfolioController',
+                template: '<main ui-view></main>',
+                pageTitle: 'CSS - Portfolio',
+                redirectTo: 'portfolio.collection'
+            })
+
+            .state('portfolio.collection', {
+                url: '/collection',
+                templateUrl: portfolioDir + 'collection/portfolioCollectionView.html',
+                controller: 'PortfolioCollectionController',
                 pageTitle: 'CSS - Portfolio'
             })
             
-            .state('project', {
+            .state('portfolio.project', {
                 url: '/project/:index',
-                templateUrl: statesDir + 'project/projectView.html',
-                controller: 'ProjectController',
+                templateUrl: portfolioDir + 'project/portfolioProjectView.html',
+                controller: 'PortfolioProjectController',
                 pageTitle: 'CSS - Portfolio'
             })
 
