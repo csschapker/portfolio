@@ -7,6 +7,7 @@
 
   position: relative;
   overflow: hidden;
+  text-align: center;
 
   button {
     &:focus {outline: none;}
@@ -20,6 +21,7 @@
     border-radius: 2px;
     background-color: transparent;
     text-align: center;
+    vertical-align: middle;
 
     img {
       width: 30px;
@@ -33,16 +35,9 @@
     }
   }
 
-  > .arrow.back {
-    left: -10%;
-  }
-
-  > .arrow.next {
-    right: -10%;
-  }
-
   .mobile-controls {
     padding: 8px;
+    vertical-align: top;
     .arrow {
       @media only screen and (min-width: 601px) {
         display: none;
@@ -51,10 +46,9 @@
   }
 
   .slide {
-    display: inline-block;
-    margin: 0 24px;
+    margin-bottom: 10px;
     @media only screen and (max-width: 900px) {
-      margin: 0 8px;
+      margin: 0 8px 10px;
     }
 
     @media only screen and (max-width: 700px) {
@@ -84,19 +78,24 @@
 
     max-width: 700px;
     max-height: 700px;
-    border-radius: 2px;
   }
 
 
   ul.dots {
-    position: absolute;
-    left: 0;
-    right: 0;
+    min-height: 0;
+    display: inline-block;
     bottom: 50px;
-    margin: 0 auto;
+    margin: 10px;
     max-width: 100%;
 
+    @media only screen and (min-width: 601px) {
+      min-height: 38px;
+      margin: 0 20px;
+
+    }
+
     li.dot {
+      vertical-align: top;
       display: inline-block;
       width: 10px;
       height: 12px;
