@@ -1,13 +1,22 @@
 body > main.home {
   text-align: center;
 
+  h1, h3 {
+    margin: 0 auto .5em auto;
+  }
+
+  p {
+    line-height: 1.25em;
+    margin: 1em auto;
+    max-width: 700px;
+  }
+
   img.headshot {
     user-select: none;
     border-radius: 2px;
     max-width: 100%;
 
     @media only screen and (min-width: 725px) {max-width: 700px;}
-
   }
 
   .contact-form {

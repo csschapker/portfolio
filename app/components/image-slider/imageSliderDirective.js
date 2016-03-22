@@ -13,7 +13,7 @@ app.directive('imageSlider', [
 
                 scope.setActive = function(index) {
                     scope.active = index;
-                    $document.scrollToElement(element);
+                    //$document.scrollToElement(element);
                 };
 
                 scope.isActive = function(index) {
