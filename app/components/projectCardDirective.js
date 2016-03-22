@@ -3,7 +3,7 @@ app.directive('projectCard', [
         return {
             restrict: 'E',
             replace: true,
-            templateUrl: 'app/components/project-card/projectCardView.html',
+            templateUrl: 'templates/directives/projectCardView.html',
             scope: {
                 project: '=',
                 index: '='

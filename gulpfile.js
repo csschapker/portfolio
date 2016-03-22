@@ -61,12 +61,13 @@ gulp.task('dev', ['sass', 'jshint', 'minify'], function() {
     gulp.watch(files.js.app, ['jshint', 'minify']);
 });
 
-gulp.task('build', ['sass'], function() {
-    gulp.src(['src/**/*', '!**/*.min.js']).pipe(gulp.dest('frontend/src'));
-    gulp.src('assets/images/**/*').pipe(gulp.dest('frontend/assets/images'));
-    gulp.src('assets/libs/**/*').pipe(gulp.dest('frontend/assets/libs'));
-    gulp.src('assets/fonts/**/*').pipe(gulp.dest('frontend/assets/fonts'));
-    gulp.src('assets/downloads/**/*').pipe(gulp.dest('frontend/assets/downloads'));
-    gulp.src('assets/styles/*.css').pipe(gulp.dest('frontend/assets/styles'));
-    gulp.src('index.html').pipe(gulp.dest('frontend'));
+gulp.task('build', ['sass', 'minify'], function() {
+    gulp.src(['src/**/*', '!**/*.map']).pipe(gulp.dest('build/src'));
+    gulp.src('templates/**/*').pipe(gulp.dest('build/templates'));
+    gulp.src('assets/images/**/*').pipe(gulp.dest('build/assets/images'));
+    gulp.src('assets/libs/**/*').pipe(gulp.dest('build/assets/libs'));
+    gulp.src('assets/fonts/**/*').pipe(gulp.dest('build/assets/fonts'));
+    gulp.src('assets/downloads/**/*').pipe(gulp.dest('build/assets/downloads'));
+    gulp.src('assets/styles/*.css').pipe(gulp.dest('build/assets/styles'));
+    gulp.src('index.html').pipe(gulp.dest('build'));
 });

@@ -3,7 +3,7 @@ app.directive('siteFooter', [
         return {
             restrict: 'E',
             replace: true,
-            templateUrl: 'app/components/site-footer/siteFooterView.html'
+            templateUrl: 'templates/directives/siteFooterView.html'
         };
     }
 ]);

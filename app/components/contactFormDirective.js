@@ -4,7 +4,7 @@ app.directive('contactForm', [
         return {
             restrict: 'E',
             replace: true,
-            templateUrl: 'app/components/contact-form/contactFormView.html',
+            templateUrl: 'templates/directives/contactFormView.html',
             link: function(scope, element, attrs) {
                 scope.data = {};
 

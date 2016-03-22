@@ -4,7 +4,7 @@ app.directive('imageSlider', [
         return {
             restrict: 'E',
             replace: true,
-            templateUrl: 'app/components/image-slider/imageSliderView.html',
+            templateUrl: 'templates/directives/imageSliderView.html',
             scope: {
                 images: '='
             },
