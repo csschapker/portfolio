@@ -49,17 +49,23 @@
     </head>
 
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li ui-sref="home" ui-sref-active="is-active">home</li>
-                    <li ui-sref="portfolio" ui-sref-active="is-active">portfolio</li>
-                    <li ui-sref="resume" ui-sref-active="is-active">résumé</li>
-                </ul>
-            </nav>
-        </header>
 
-        <main ui-view class="{{$state.current.name.replace('.', '-')}}"></main>
+        <div id="wrapper">
+
+            <header>
+                <nav>
+                    <ul>
+                        <li ui-sref="home" ui-sref-active="is-active">home</li>
+                        <li ui-sref="portfolio" ui-sref-active="is-active">portfolio</li>
+                        <li ui-sref="resume" ui-sref-active="is-active">résumé</li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main ui-view class="{{$state.current.name.replace('.', '-')}}-state"></main>
+
+        </div>
+
         <site-footer></site-footer>
 
     </body>
