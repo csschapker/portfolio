@@ -1,13 +1,10 @@
-body > .page > main.resume {
+body > main.resume {
   position: relative;
   overflow-x: hidden;
+  text-align: center;
 
-  .mdl-button--raised {
-    margin-bottom: 24px;
-
-    @media only screen and (min-width: 751px) {
-      display: none;
-    }
+  a {
+    margin-bottom: 25px;
   }
 
   .scroll-container {
@@ -20,6 +17,7 @@ body > .page > main.resume {
     background-color: white;
     border-radius: 2px;
     width: 612px;
+    padding: 10px;
 
     @media only screen and (max-width: 800px) {
       width: 575px;
@@ -35,22 +33,4 @@ body > .page > main.resume {
       }
     }
   }
-
-  .mdl-button--fab {
-    @media only screen and (max-width: 750px) {
-      display: none;
-    }
-
-    padding: 4px;
-    position: absolute;
-    top: 24px;
-    right: 24px;
-
-
-    img {
-      width: 48px;
-      height: 48px;
-    }
-  }
-
 }
