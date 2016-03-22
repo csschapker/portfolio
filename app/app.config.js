@@ -26,7 +26,7 @@ app.config([
                 controller: 'PortfolioCollectionController',
                 pageTitle: 'CSS - Portfolio'
             })
-            
+
             .state('portfolio.project', {
                 url: '/project/:index',
                 templateUrl: portfolioDir + 'project/portfolioProjectView.html',
