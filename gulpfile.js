@@ -42,6 +42,7 @@ gulp.task('build', ['sass'], function() {
     gulp.src("app/**/*").pipe(gulp.dest("frontend/app"));
     gulp.src("assets/images/**/*").pipe(gulp.dest("frontend/assets/images"));
     gulp.src("assets/libs/**/*").pipe(gulp.dest("frontend/assets/libs"));
+    gulp.src("assets/fonts/**/*").pipe(gulp.dest("frontend/assets/fonts"));
     gulp.src("assets/downloads/**/*").pipe(gulp.dest("frontend/assets/downloads"));
     gulp.src("assets/styles/*.css").pipe(gulp.dest("frontend/assets/styles"));
     gulp.src("index.html").pipe(gulp.dest("frontend"));
