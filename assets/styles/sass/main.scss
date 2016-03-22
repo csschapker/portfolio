@@ -1,6 +1,6 @@
 @import "colors";
 
-@import "components/nav";
+@import "components/header";
 @import "components/site-footer";
 @import "components/image-slider";
 @import "components/project-card";
@@ -11,7 +11,6 @@
 @import "states/project";
 @import "states/resume";
 
-@import "components/header";
 
 * {  box-sizing: border-box;  }
 
